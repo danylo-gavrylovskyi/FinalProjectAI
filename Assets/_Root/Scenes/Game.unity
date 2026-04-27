@@ -1893,6 +1893,7 @@ GameObject:
   - component: {fileID: 736824951}
   - component: {fileID: 736824953}
   - component: {fileID: 736824952}
+  - component: {fileID: 736824954}
   m_Layer: 5
   m_Name: HealthBar_Fill
   m_TagString: Untagged
@@ -1932,7 +1933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8627451, g: 0.15686275, b: 0.15686275, a: 1}
+  m_Color: {r: 0.09420614, g: 0.6886792, b: 0.15713507, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1957,6 +1958,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736824950}
   m_CullTransparentMesh: 1
+--- !u!114 &736824954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736824950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae65ba25ed7541bf808f5b0e33460029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursedDungeon.UI.HealthBarColor
 --- !u!1 &877723296
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5138590774073901033}
   - component: {fileID: 394208770181052960}
   - component: {fileID: 7734449665986905984}
+  - component: {fileID: 5013686163240189040}
   m_Layer: 7
   m_Name: OrcBoss
   m_TagString: Untagged
@@ -172,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18d65cdd9f6aa49f68cc0c8742e2205a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CursedDungeon.Health.Health
-  maxHealth: 100
+  maxHealth: 300
 --- !u!114 &5138590774073901033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,8 +186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93692270570e14fe69b46a476972dbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CursedDungeon.Enemies.EnemySpriteAnimator
-  rb: {fileID: 8818442566017001517}
-  health: {fileID: 3294889538491971790}
   idleFrames:
   - {fileID: 3392630139893744386, guid: 2dfd7b68fb7754472a3e2c43c96fb19c, type: 3}
   - {fileID: 2131076797033364975, guid: 2dfd7b68fb7754472a3e2c43c96fb19c, type: 3}
@@ -238,3 +237,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CursedDungeon.Enemies.ContactDamagePlayer
   damage: 20
   damageCooldown: 1
+--- !u!114 &5013686163240189040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3237929548385962640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e97d1aad04f44e1850bfea19c020f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursedDungeon.Enemies.OrcBossAI
+  detectionRadius: 10
+  attackRadius: 1.5
+  waypointReachedDist: 0.4
+  patrolSpeed: 1.2
+  chaseSpeed: 2.8
+  retreatSpeed: 3.5
+  patrolRadius: 4
+  patrolWaitMin: 0.5
+  patrolWaitMax: 1.5
+  retreatHpPercent: 0.3
+  healPerSecond: 20
+  bonfireHealRadius: 1.5
